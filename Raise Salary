@@ -1,0 +1,8 @@
+create or replace procedure raise_salary (x number)
+is
+begin
+update employees set salary = salary *1.1
+where employee_id =x; 
+commit;
+end raise_salary;
+/
